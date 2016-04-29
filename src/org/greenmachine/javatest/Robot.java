@@ -1,5 +1,8 @@
 package org.greenmachine.javatest;
 
+/**
+ * This is the Robot main class
+ */
 public class Robot {
     private String name;
     private Claw clawLeft;
@@ -19,6 +22,7 @@ public class Robot {
     }
     
     public void openRightClaw() {
+		System.out.println("Opening the claw");
     	clawRight.open();
     }
 }
