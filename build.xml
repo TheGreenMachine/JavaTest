@@ -1,0 +1,27 @@
+
+<project name="JavaTest" default="testpos" basedir=".">
+	<description>
+		A simple test framework for testing Java algorithms.
+	</description>
+
+	<target name="init">
+		<mkdir dir="bin"/>
+	</target>
+
+	<target name="clean">
+		<delete dir="bin"/>
+	</target>
+
+	<target name="compile" depends="init">
+		<javac srcdir="src" destdir="bin"/>
+	</target>
+
+
+	<target name="testpos" depends="compile">
+		<java classname="org.greenmachine.javatest.CalcPos">
+			<classpath>
+				<pathelement path="bin"/>
+			</classpath>
+		</java>
+	</target>
+</project>
