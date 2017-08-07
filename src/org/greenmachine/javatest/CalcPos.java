@@ -1,5 +1,17 @@
 package org.greenmachine.javatest;
 
+/**
+ * This is a class to be used for testing position algorithms.
+ * 
+ * To test this:
+ *  - Create a new branch for your code starting from the PositionTest branch
+ *  - Checkout your new branch
+ *  - Modify the calculateDeltaPos() method to return a valid DeltaPos object (change in inches).
+ *  - Modify the calculatePosition() method to return the new position given the current position
+ *    and the current change in position.
+ *  - Run the ant build to compile and test the CalcPos class.
+ *  - When you get something working commit the changes to your new branch and push to GitHub.
+ */
 public class CalcPos {
 
 	public final static double WHEELBASE = 20.0;  // inches
