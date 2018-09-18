@@ -1,7 +1,8 @@
 package org.greenmachine.javatest;
 
 /**
- * This is the Robot main class
+ * This is the Robot main class.
+ * Adding a comment.
  */
 public class Robot {
     private String name;
